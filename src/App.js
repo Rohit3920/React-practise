@@ -1,33 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
-import User from './User'
+import {Button} from "react-bootstrap"
+import React, { useState, useEffect } from 'react';
+import User1 from "./User1"
 
 function App() {
+  const [data, setData] = useState(10);
+  const [count, setCount] = useState(1);
+
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          
-        </a>
-        <h1>rohit nittawadekar</h1>
-         <a className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"> Learn React</a>
-      </header> */}
 
+      <User1 count={count} data={data} />
 
-      <h1>rohit nittawadekar</h1>
-      <User />
+      <Button variant = "warning" onClick={() => setData(data + 1)}>Update Data {data}</Button>
+      <Button onClick={() => setCount(count + 1)}>Update Count {count}</Button>
+      
+
     </div>
   );
 }
