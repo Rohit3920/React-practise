@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, { useState} from "react";
 import './Login.css';
 import { Button } from "react-bootstrap";
 
@@ -33,12 +33,10 @@ export default function Login() {
 
                 <input type="password" placeholder="Enter Password" onChange={passwordHandler} /><br/>
                 {passwordErr ? <span>Password Not Valid</span> : <span></span>}
-
-
                 <br /><br />
 
                 <Button type="submit">LogIn</Button>
             </form>
         </div>
-    )
+    );
 }

@@ -1,6 +1,5 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import { Button } from "react-bootstrap"
 import React from 'react';
 import Login from './Component/Login';
 

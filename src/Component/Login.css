@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-    background-color: rgb(47, 0, 92);
+    background-color: rgb(81, 1, 156);
 }
 
 .LoginDiv{
@@ -12,7 +12,7 @@ body{
     margin: 40px auto 20px auto;
     border: 1px solid black;
     border-radius: 20px;
-    background-color: blueviolet;
+    background-color: rgb(184, 108, 255);
     box-shadow: 0 0 10px 1px white;
 }
 
