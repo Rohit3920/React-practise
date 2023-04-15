@@ -5,8 +5,10 @@ import React from 'react';
 import ClickEventFun from './Component/ClickEventFun'
 import StateFun from './Component/StateFun'
 import StateCls from './Component/StateCls';
+import PropFun from './Component/PropFun';
 
 function App() {
+
   return (
     <div className="App">
       {/* <h1>Hello</h1> */}
@@ -15,6 +17,7 @@ function App() {
       <ClickEventFun /><br/>
       <StateFun /><br/>
       <StateCls /> <br/>
+    <PropFun name = {"Rohit"} email={"rohit@test.com"}/> <br/>
     </div>
   );
 }
