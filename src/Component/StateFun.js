@@ -7,7 +7,7 @@ function StateFun() {
 
     return (
         <div>
-            <h1>State Function with Component : {count}</h1>
+            <h1>State with Function Component : {count}</h1>
 
             <Button onClick={()=>setCount(count + 1)} >upadate state</Button>
         </div>

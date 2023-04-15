@@ -1,10 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
-import { Button } from "react-bootstrap";
 import React from 'react';
 // import Login from './Component/Login';
 import ClickEventFun from './Component/ClickEventFun'
 import StateFun from './Component/StateFun'
+import StateCls from './Component/StateCls';
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
 
       <ClickEventFun /><br/>
       <StateFun /><br/>
+      <StateCls /> <br/>
     </div>
   );
 }
