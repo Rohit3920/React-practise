@@ -6,6 +6,7 @@ import ClickEventFun from './Component/ClickEventFun'
 import StateFun from './Component/StateFun'
 import StateCls from './Component/StateCls';
 import PropFun from './Component/PropFun';
+import PropsClass from './Component/PropsClass'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <StateFun /><br/>
       <StateCls /> <br/>
     <PropFun name = {"Rohit"} email={"rohit@test.com"} other = {{address : "Kolhapur"}}/> <br/>
+    <PropsClass name= {"Rohit Nittawadekar"}/>
     </div>
   );
 }
