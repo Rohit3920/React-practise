@@ -17,7 +17,7 @@ function App() {
       <ClickEventFun /><br/>
       <StateFun /><br/>
       <StateCls /> <br/>
-    <PropFun name = {"Rohit"} email={"rohit@test.com"}/> <br/>
+    <PropFun name = {"Rohit"} email={"rohit@test.com"} other = {{address : "Kolhapur"}}/> <br/>
     </div>
   );
 }

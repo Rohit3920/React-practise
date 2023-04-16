@@ -6,7 +6,7 @@ function PropFun(props){
             <p>props with Function Component</p>
             <h1>{props.name}</h1>
             <h1>{props.email}</h1>
-            {/* <h1>{props.other.address}</h1> */}
+            <h1>{props.other.address}</h1>
         </div>
     )
 }
