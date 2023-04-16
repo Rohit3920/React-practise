@@ -12,11 +12,11 @@ function GetInputValue(){
     }
 
     return (
-        <div>
+        <>
             <h1>Get Input Box Value: {data}</h1>
             <input type="text" onChange={getData}/>
             
-        </div>
+        </>
     );
 }
 

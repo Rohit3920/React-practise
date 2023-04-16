@@ -18,7 +18,7 @@ function HideShowElement(){
     }
 
     return(
-        <div>
+        <>
             <h1>Hide & Show Element : {
                 status ?
                     <span className="main">Hello ROHIT</span>
@@ -29,7 +29,7 @@ function HideShowElement(){
 <Button variant="secondary" onClick={hide}>Hide Btn</Button>
 <Button onClick={toggleEvent}>toggleBtn</Button>
 
-        </div>
+        </>
     )
 
 }

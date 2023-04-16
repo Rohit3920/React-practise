@@ -16,10 +16,10 @@ class StateCls extends Component
     }
     render(){
         return(
-            <div>
+            <>
                 <h1>State with Class Component : {this.state.name}</h1>
                 <Button onClick={()=> this.chgState()}>State change</Button>
-            </div>
+            </>
         );
     }
 }

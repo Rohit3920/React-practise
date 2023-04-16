@@ -13,7 +13,7 @@ export default function BasicForm(){
 
 
     return(
-        <div>
+        <>
             <h1>Basic Form</h1>
             <form className="form" onSubmit={formHandle}>
                 
@@ -33,6 +33,6 @@ export default function BasicForm(){
             <Button type="submit">Submit</Button>
 
             </form>
-        </div>
+        </>
     )
 }
