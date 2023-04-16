@@ -9,6 +9,7 @@ import PropFun from './Component/PropFun';
 import PropsClass from './Component/PropsClass'
 import GetInputValue from './Component/GetInputValue'
 import HideShowElement from './Component/HideShowElement';
+import BasicForm from './Component/BasicForm';
 
 function App() {
 
@@ -30,6 +31,8 @@ function App() {
     <GetInputValue /><br />
 
     <HideShowElement /><br />
+
+    <BasicForm /><br />
     </div>
   );
 }
