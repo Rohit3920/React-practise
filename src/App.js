@@ -7,6 +7,7 @@ import StateFun from './Component/StateFun'
 import StateCls from './Component/StateCls';
 import PropFun from './Component/PropFun';
 import PropsClass from './Component/PropsClass'
+import GetInputValue from './Component/GetInputValue'
 
 function App() {
 
@@ -24,6 +25,8 @@ function App() {
     <PropFun name = {"Rohit"} email={"rohit@test.com"} other = {{address : "Kolhapur"}}/> <br/>
 
     <PropsClass name= {"Rohit Nittawadekar"}/><br/>
+
+    <GetInputValue /><br />
     </div>
   );
 }
