@@ -8,6 +8,7 @@ import StateCls from './Component/StateCls';
 import PropFun from './Component/PropFun';
 import PropsClass from './Component/PropsClass'
 import GetInputValue from './Component/GetInputValue'
+import HideShowElement from './Component/HideShowElement';
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
     <PropsClass name= {"Rohit Nittawadekar"}/><br/>
 
     <GetInputValue /><br />
+
+    <HideShowElement /><br />
     </div>
   );
 }
