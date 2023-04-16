@@ -12,7 +12,7 @@ class StateCls extends Component
 
     }
     chgState(){
-        this.setState(this.name)
+        this.setState({name : "ROHIT NITTAWADEKAR"})
     }
     render(){
         return(

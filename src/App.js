@@ -15,11 +15,15 @@ function App() {
       {/* <h1>Hello</h1> */}
       {/* <Login /> */}
 
-      <ClickEventFun /><br/>
+      <ClickEventFun /><br/> 
+
       <StateFun /><br/>
+
       <StateCls /> <br/>
+
     <PropFun name = {"Rohit"} email={"rohit@test.com"} other = {{address : "Kolhapur"}}/> <br/>
-    <PropsClass name= {"Rohit Nittawadekar"}/>
+
+    <PropsClass name= {"Rohit Nittawadekar"}/><br/>
     </div>
   );
 }
