@@ -12,8 +12,13 @@ import HideShowElement from './Component/HideShowElement';
 import BasicForm from './Component/BasicForm';
 import CondRendering from './Component/CondRendering'
 import FormValidation from './Component/FormValidation';
+import PassfunProps from './Component/PassfunProps'
 
 function App() {
+
+  function alertBox(){
+    alert("Hello Mr. User. Welcome")
+  }
 
   return (
     <div className="App">
@@ -39,6 +44,8 @@ function App() {
     <CondRendering /><br />
 
     <FormValidation />
+
+    <PassfunProps data= {alertBox}/>
 
     </div>
   );
