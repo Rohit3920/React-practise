@@ -10,6 +10,7 @@ import PropsClass from './Component/PropsClass'
 import GetInputValue from './Component/GetInputValue'
 import HideShowElement from './Component/HideShowElement';
 import BasicForm from './Component/BasicForm';
+import CondRendering from './Component/CondRendering'
 
 function App() {
 
@@ -33,6 +34,8 @@ function App() {
     <HideShowElement /><br />
 
     <BasicForm /><br />
+
+    <CondRendering /><br />
 
     
 
