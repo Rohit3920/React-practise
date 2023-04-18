@@ -10,7 +10,7 @@ function CondRendering(){
             <h1>Conditional Rendering in React</h1>
 
         {
-            logged ? <h3>True st'ment in Rendring</h3>: <h4>False st'ment in Rendring</h4>
+            logged ? <h3>True st'ment in Rendring :)</h3>: <h4>False st'ment in Rendring :(</h4>
         }
 
             <Button onClick={()=> {

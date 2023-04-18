@@ -11,6 +11,7 @@ import GetInputValue from './Component/GetInputValue'
 import HideShowElement from './Component/HideShowElement';
 import BasicForm from './Component/BasicForm';
 import CondRendering from './Component/CondRendering'
+import FormValidation from './Component/FormValidation';
 
 function App() {
 
@@ -37,7 +38,7 @@ function App() {
 
     <CondRendering /><br />
 
-    
+    <FormValidation />
 
     </div>
   );
