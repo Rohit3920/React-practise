@@ -15,6 +15,7 @@ import FormValidation from './Component/FormValidation';
 import PassfunProps from './Component/PassfunProps'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ConstructorLCM from './Component/ConstructorLCM';
+import RenderLCM from './Component/RenderLCM';
 
 function App() {
 
@@ -78,6 +79,9 @@ function App() {
     <p>_____________________________________________________________________________________________________________________________________________________________________________________________________________</p>
 
 
+<RenderLCM />
+
+<p>_____________________________________________________________________________________________________________________________________________________________________________________________________________</p>
     {/* <BrowserRouter >
     <Routes>
       <Route path= "/" element={<h1>Hello Router </h1>}/>
