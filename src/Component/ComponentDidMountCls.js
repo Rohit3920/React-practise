@@ -1,10 +1,14 @@
 import { Component } from "react";
+import { Button } from "react-bootstrap";
 
 
 class ComponentDidMountCls extends Component {
     constructor() {
         super();
         console.warn("Constructor");
+        this.state = {
+            name: "Rohit"
+        }
     };
 
     componentDidMount() {
@@ -16,12 +20,14 @@ class ComponentDidMountCls extends Component {
 
         return (
             <div>
-                <h3>Component Did Mount, Life Cycle Method</h3>
+                <h3>Component Did Mount, Life Cycle Method // Name: {this.state.name}</h3>
                 <p>Open Console Warn to show this result  <br /> 
                     frist Call :- Constructor; <br /> 
                     second call :- Render ; <br /> 
                     third call :- componentDidMount
                 </p>
+
+                <Button onClick={()=>{ this.setState({name:"nittawadekar"})}}>change Name</Button>
             </div>
         )
     }
