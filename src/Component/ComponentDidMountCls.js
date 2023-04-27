@@ -22,7 +22,7 @@ class ComponentDidMountCls extends Component {
             <div>
                 <h3>Component Did Mount, Life Cycle Method // Name: {this.state.name}</h3>
                 <p>Open Console Warn to show this result  <br /> 
-                    frist Call :- Constructor; <br /> 
+                    frist Call :- Constructor; <b>One Time</b><br /> 
                     second call :- Render ; <br /> 
                     third call :- componentDidMount
                 </p>

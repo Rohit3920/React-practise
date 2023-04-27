@@ -18,6 +18,7 @@ import ConstructorLCM from './Component/ConstructorLCM';
 import RenderLCM from './Component/RenderLCM';
 import ComponentDidMountCls from './Component/ComponentDidMountCls';
 import Random from './Component/Random';
+import ComponentDidUpdateCls from './Component/ComponentDidUpdateCls';
 
 function App() {
 
@@ -91,7 +92,9 @@ function App() {
 
       <p>_____________________________________________________________________________________________________________________________________________________________________________________________________________</p>
 
+    <ComponentDidUpdateCls />
 
+    <p>_____________________________________________________________________________________________________________________________________________________________________________________________________________</p>
       {/* <BrowserRouter >
     <Routes>
       <Route path= "/" element={<h1>Hello Router </h1>}/>
