@@ -20,6 +20,7 @@ import ComponentDidMountCls from './Component/ComponentDidMountCls';
 import Random from './Component/Random';
 import ComponentDidUpdateCls from './Component/ComponentDidUpdateCls';
 import ShouldComponentUpdateCls from './Component/ShouldComponentUpdateCls';
+import HookUseEffect from './Component/HookUseEffect';
 
 function App() {
 
@@ -101,6 +102,7 @@ function App() {
 
     <p>_____________________________________________________________________________________________________________________________________________________________________________________________________________</p>
 
+    <HookUseEffect />
 
 
 
