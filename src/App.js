@@ -17,6 +17,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ConstructorLCM from './Component/ConstructorLCM';
 import RenderLCM from './Component/RenderLCM';
 import ComponentDidMountCls from './Component/ComponentDidMountCls';
+import Random from './Component/Random';
 
 function App() {
 
@@ -28,6 +29,8 @@ function App() {
     <div className="App">
       {/* <h1>Hello</h1> */}
       {/* <Login /> */}
+
+      {/* <Random /> */}         //Example for random Number under 6
       <p>_____________________________________________________________________________________________________________________________________________________________________________________________________________</p>
 
       <ClickEventFun /><br />
