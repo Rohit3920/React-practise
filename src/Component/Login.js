@@ -1,42 +1,99 @@
-import React, { useState} from "react";
-import './Login.css';
-import { Button } from "react-bootstrap";
+import React, { useState } from 'react';
 
-export default function Login() {
-    const [user, setUser] = useState();
-    const [password, setPassword] = useState();
-    const [userErr, setUserErr] = useState(false);
-    const [passwordErr, setPasswordErr] = useState(false);
+const Login = () => {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
 
-    function loginHandler(e) {
-        e.preventDefault();
-    }
+    const handleUsernameChange = event => {
+        setUsername(event.target.value);
+    };
 
-    function userHandler(e) {
-        let item = e.target.value
-        item.length < 3 ? setUserErr(true) : setUserErr(false)
-    }
+    const handlePasswordChange = event => {
+        setPassword(event.target.value);
+    };
 
-    function passwordHandler(e) {
-        let item = e.target.value
-        item.length < 3 ? setPasswordErr(true) : setPasswordErr(false)
+    const handleSubmit = event => {
+        event.preventDefault();
+        // handle login logic here
+    };
+
+    const loginPg = () => {
+        username === "rohit" && password === '123' ?
+            alert("login successfully")
+            : alert("Login Failed")
+
+        username === "rohit" && password === '123' ?
+            setUsername('')
+
+            : setUsername(username)
+
+
+        username === "rohit" && password === '123' ?
+            setPassword('')
+            : setPassword(password)
+
     }
 
     return (
-        <div className="LoginDiv">
-            <h1>LOGIN FORM</h1>
+        <form onSubmit={handleSubmit}>
+            <h2>Login</h2>
+            <label>
+                Username:
+                <input type="text" value={username} onChange={handleUsernameChange} />
+            </label>
+            <br />
+            <label>
+                Password:
+                <input type="password" value={password} onChange={handlePasswordChange} />
+            </label>
+            <br />
+            <button type="submit" onClick={loginPg}>Login</button>
+        </form>
+    );
+};
 
-            <form onSubmit={loginHandler}>
-                <input type="text" placeholder="Enter User Name" onChange={userHandler} /><br/>
-                {userErr ? <span>User Not Valid</span>: <span></span>}
-                <br /><br />
+const SignUp = () => {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
 
-                <input type="password" placeholder="Enter Password" onChange={passwordHandler} /><br/>
-                {passwordErr ? <span>Password Not Valid</span> : <span></span>}
-                <br /><br />
+    const handleUsernameChange = event => {
+        setUsername(event.target.value);
+    };
 
-                <Button type="submit">LogIn</Button>
-            </form>
+    const handlePasswordChange = event => {
+        setPassword(event.target.value);
+    };
+
+    const handleSubmit = event => {
+        event.preventDefault();
+        // handle sign up logic here
+    };
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <h2>Sign Up</h2>
+            <label>
+                Username:
+                <input type="text" value={username} onChange={handleUsernameChange} />
+            </label>
+            <br />
+            <label>
+                Password:
+                <input type="password" value={password} onChange={handlePasswordChange} />
+            </label>
+            <br />
+            <button type="submit">signup</button>
+        </form>
+    );
+};
+
+const App = () => {
+    return (
+        <div>
+            <Login />
+            <SignUp />
         </div>
     );
-}
+};
+
+export default App;

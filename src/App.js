@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-// import Login from './Component/Login';
+import Login from './Component/Login';
 import ClickEventFun from './Component/ClickEventFun'
 import StateFun from './Component/StateFun'
 import StateCls from './Component/StateCls';
@@ -19,6 +19,7 @@ import RenderLCM from './Component/RenderLCM';
 import ComponentDidMountCls from './Component/ComponentDidMountCls';
 import Random from './Component/Random';
 import ComponentDidUpdateCls from './Component/ComponentDidUpdateCls';
+import ShouldComponentUpdateCls from './Component/ShouldComponentUpdateCls';
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
   return (
     <div className="App">
       {/* <h1>Hello</h1> */}
-      {/* <Login /> */}
+      <Login />
 
       {/* <Random /> */}         //Example for random Number under 6
       <p>_____________________________________________________________________________________________________________________________________________________________________________________________________________</p>
@@ -95,6 +96,14 @@ function App() {
     <ComponentDidUpdateCls />
 
     <p>_____________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+
+    <ShouldComponentUpdateCls />
+
+    <p>_____________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+
+
+
+
       {/* <BrowserRouter >
     <Routes>
       <Route path= "/" element={<h1>Hello Router </h1>}/>
