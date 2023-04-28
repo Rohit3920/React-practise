@@ -21,6 +21,7 @@ import Random from './Component/Random';
 import ComponentDidUpdateCls from './Component/ComponentDidUpdateCls';
 import ShouldComponentUpdateCls from './Component/ShouldComponentUpdateCls';
 import HookUseEffect from './Component/HookUseEffect';
+import Styling from './Component/Styling';
 
 function App() {
 
@@ -103,6 +104,10 @@ function App() {
     <p>_____________________________________________________________________________________________________________________________________________________________________________________________________________</p>
 
     <HookUseEffect />
+
+    <p>_____________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+
+    <Styling />
 
 
 
