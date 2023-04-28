@@ -15,25 +15,23 @@ function HandleArray() {
 
     return (
         <div>
-            {/* {
-                student.map((data) =>
-                    <h3>name is {data.name}</h3>
-                )
-            } */}
+            <h1>List with Bootstrap & Unique Key TABLE</h1>
 
             <Table border='1' variant="dark">
                 <tbody >
                     <tr>
-                        <td>Name</td>
-                        <td>Country</td>
-                        <td>Mobile No.</td>
+                        <td><b>Sr. <br /> No.</b></td>
+                        <td><b>Name</b></td>
+                        <td><b>Country</b></td>
+                        <td><b>Mobile No.</b></td>
                     </tr>
 
 
 
                     {
-                        student.map((data) =>
-                            <tr>
+                        student.map((data, i) =>
+                            <tr key={i}>
+                                <td>{i + 1}</td>
                                 <td>{data.name}</td>
                                 <td>{data.country}</td>
                                 <td>{data.Mobile}</td>
