@@ -15,7 +15,7 @@ function ReUseComponent(){
 
         {
             userInfo.map((info, i) => 
-            <ReUseComponentchild data={info} />
+            <ReUseComponentchild data={info} id={i}/>
             )
         }
         </div>
