@@ -22,6 +22,7 @@ import ComponentDidUpdateCls from './Component/ComponentDidUpdateCls';
 import ShouldComponentUpdateCls from './Component/ShouldComponentUpdateCls';
 import HookUseEffect from './Component/HookUseEffect';
 import Styling from './Component/Styling';
+import HandleArray from './Component/HandleArray';
 
 function App() {
 
@@ -108,6 +109,10 @@ function App() {
     <p>_____________________________________________________________________________________________________________________________________________________________________________________________________________</p>
 
     <Styling />
+
+    <p>_____________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+
+    <HandleArray />
 
 
 
