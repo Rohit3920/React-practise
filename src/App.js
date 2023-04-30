@@ -26,6 +26,7 @@ import HandleArray from './Component/HandleArray';
 import ReUseComponent from './Component/ReUseComponent';
 import LineCode from './Component/LineCode';
 import HookUseMemo from './Component/HookUseMemo';
+import RefClass from './Component/RefClass';
 
 function App() {
 
@@ -106,6 +107,9 @@ function App() {
 
       <LineCode />
       <HookUseMemo />
+
+      <LineCode />
+      <RefClass />
 
 
       {/* <BrowserRouter >
