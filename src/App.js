@@ -25,7 +25,7 @@ import Styling from './Component/Styling';
 import HandleArray from './Component/HandleArray';
 import ReUseComponent from './Component/ReUseComponent';
 import LineCode from './Component/LineCode';
-import HookUseMemo from './HookUseMemo';
+import HookUseMemo from './Component/HookUseMemo';
 
 function App() {
 
