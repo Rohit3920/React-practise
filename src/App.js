@@ -34,10 +34,14 @@ function App() {
 
   return (
     <div className="App">
-      {/* <h1>Hello</h1> */}
-      {/* <Login /> */}
+      <h1>Hello!!! I`m Web Developer ROHIT, React User</h1>
+      <LineCode />
+      <Login />
 
-      {/* <Random /> */}         //Example for random Number under 6
+      <LineCode />
+      <Random />       {/* Example for random Number under 6 */}
+
+
       <LineCode />
       <ClickEventFun /><br />
 

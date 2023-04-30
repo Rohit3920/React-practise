@@ -1,6 +1,6 @@
 import ReUseComponentchild from "./ReUseComponentchild";
 
-function ReUseComponent(){
+function ReUseComponent() {
 
     const userInfo = [
         { name: 'rohit', country: "INDIA", Mobile: 12345678 },
@@ -10,14 +10,16 @@ function ReUseComponent(){
         { name: 'prajwal', country: "INDIA", Mobile: 45646547 },
     ]
 
-    return(
+    return (
         <div>
+                            <h1>Re-Use Component</h1>
 
-        {
-            userInfo.map((info, i) => 
-            <ReUseComponentchild data={info} id={i}/>
-            )
-        }
+            {
+
+                userInfo.map((info, i) =>
+                    <ReUseComponentchild data={info} id={i} />
+                )
+            }
         </div>
     )
 
