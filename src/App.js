@@ -27,6 +27,7 @@ import ReUseComponent from './Component/ReUseComponent';
 import LineCode from './Component/LineCode';
 import HookUseMemo from './Component/HookUseMemo';
 import RefClass from './Component/RefClass';
+import HookUseRef from './Component/HookUseRef';
 
 function App() {
 
@@ -110,6 +111,12 @@ function App() {
 
       <LineCode />
       <RefClass />
+
+      <LineCode />
+      <HookUseRef />
+
+      <LineCode />
+
 
 
       {/* <BrowserRouter >
