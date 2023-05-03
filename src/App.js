@@ -28,6 +28,7 @@ import LineCode from './Component/LineCode';
 import HookUseMemo from './Component/HookUseMemo';
 import RefClass from './Component/RefClass';
 import HookUseRef from './Component/HookUseRef';
+import ForwardRef1 from './Component/ForwardRef1';
 
 function App() {
 
@@ -116,7 +117,7 @@ function App() {
       <HookUseRef />
 
       <LineCode />
-
+    <ForwardRef1 />
 
 
       {/* <BrowserRouter >
