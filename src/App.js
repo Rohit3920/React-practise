@@ -31,6 +31,7 @@ import HookUseRef from './Component/HookUseRef';
 import ForwardRef1 from './Component/ForwardRef1';
 import ControlledComponent from './Component/ControlledComponent';
 import UnControlledComponent from './Component/UnControlledComponent';
+import HOCComponent from './Component/HOCComponent';
 
 function App() {
 
@@ -125,7 +126,10 @@ function App() {
     <ControlledComponent />
 
     <LineCode />
-    <UnControlledComponent />
+    {/* <UnControlledComponent /> */}
+
+    <LineCode />
+    <HOCComponent/>
 
 
       {/* <BrowserRouter >
