@@ -30,6 +30,7 @@ import RefClass from './Component/RefClass';
 import HookUseRef from './Component/HookUseRef';
 import ForwardRef1 from './Component/ForwardRef1';
 import ControlledComponent from './Component/ControlledComponent';
+import UnControlledComponent from './Component/UnControlledComponent';
 
 function App() {
 
@@ -122,6 +123,9 @@ function App() {
 
     <LineCode />
     <ControlledComponent />
+
+    <LineCode />
+    <UnControlledComponent />
 
 
       {/* <BrowserRouter >
