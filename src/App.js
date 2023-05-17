@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import Home from './Component/Home';
 import Login from './Component/Login';
 import ClickEventFun from './Component/ClickEventFun'
 import StateFun from './Component/StateFun'
@@ -13,7 +14,7 @@ import BasicForm from './Component/BasicForm';
 import CondRendering from './Component/CondRendering'
 import FormValidation from './Component/FormValidation';
 import PassfunProps from './Component/PassfunProps'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ConstructorLCM from './Component/ConstructorLCM';
 import RenderLCM from './Component/RenderLCM';
 import ComponentDidMountCls from './Component/ComponentDidMountCls';
@@ -41,102 +42,76 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello!!! I`m Web Developer ROHIT, React User</h1>
-      <LineCode />
-      <Login />
 
-      <LineCode />
-      <Random />       {/* Example for random Number under 6 */}
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />}/>
 
+          <Route path="/login" element={<Login />} />
 
-      <LineCode />
-      <ClickEventFun /><br />
+          <Route path="/ClickEventFun" element={<ClickEventFun />}/>
 
-      <LineCode />
-      <StateFun /><br />
+          <Route path="/StateFun" element={<StateFun />}/>
 
-      <LineCode />
-      <StateCls /> <br />
+          <Route path="/StateCls" element={<StateCls />}/>
 
-      <LineCode />
-      <PropFun name={"Rohit"} email={"rohit@test.com"} other={{ address: "Kolhapur" }} /> <br />
+          <Route path="/PropFun" element={<PropFun name={"Rohit"} email={"rohit@test.com"} other={{ address: "Kolhapur" }} />}/>
 
-      <LineCode />
-      <PropsClass name={"Rohit Nittawadekar"} /><br />
+          <Route path="/PropsClass" element={<PropsClass name={"Rohit Nittawadekar"}/>}/>
 
+          <Route path="/GetInputValue" element={<GetInputValue />}/>
 
-      <LineCode />
-      <GetInputValue /><br />
+          <Route path="/HideShowElement" element={<HideShowElement />}/>
 
-      <LineCode />
-      <HideShowElement /><br />
+          <Route path="/BasicForm" element={<BasicForm />}/>
 
-      <LineCode />
-      <BasicForm /><br />
+          <Route path="/CondRendering" element={<CondRendering />}/>
 
-      <LineCode />
-      <CondRendering /><br />
+          <Route path="/FormValidation" element={<FormValidation />}/>
 
-      <LineCode />
-      <FormValidation />
+          <Route path="/PassfunProps" element={<PassfunProps data={alertBox}/>}/>
 
-      <LineCode />
-      <PassfunProps data={alertBox} />
+          <Route path="/ConstructorLCM" element={<ConstructorLCM />}/>
 
-      <LineCode />
-      <ConstructorLCM />
+          <Route path="/RenderLCM" element={<RenderLCM />}/>
 
-      <LineCode />
-      <RenderLCM />
+          <Route path="/ComponentDidMountCls" element={<ComponentDidMountCls />}/>
 
-      <LineCode />
-      <ComponentDidMountCls />
+          <Route path="/Random" element={<Random />}/>
 
-      <LineCode />
-      <ComponentDidUpdateCls />
+          <Route path="/ComponentDidUpdateCls" element={<ComponentDidUpdateCls />}/>
 
-      <LineCode />
-      <ShouldComponentUpdateCls />
+          <Route path="/ShouldComponentUpdateCls" element={<ShouldComponentUpdateCls />}/>
 
-      <LineCode />
-      <HookUseEffect />
+          <Route path="/HookUseEffect" element={<HookUseEffect />}/>
 
-      <LineCode />
-      <Styling />
+          <Route path="/Styling" element={<Styling />}/>
 
-      <LineCode />
-      <HandleArray />
+          <Route path="/HandleArray" element={<HandleArray />}/>
 
-      <LineCode />
-      <ReUseComponent />
+          <Route path="/ReUseComponent" element={<ReUseComponent />}/>
 
-      <LineCode />
-      <HookUseMemo />
+          <Route path="/LineCode" element={<LineCode />}/>
 
-      <LineCode />
-      <RefClass />
+          <Route path="/HookUseMemo" element={<HookUseMemo />}/>
 
-      <LineCode />
-      <HookUseRef />
+          <Route path="/RefClass" element={<RefClass />}/>
 
-      <LineCode />
-    <ForwardRef1 />
+          <Route path="/HookUseRef" element={<HookUseRef />}/>
 
-    <LineCode />
-    <ControlledComponent />
+          <Route path="/ForwardRef1" element={<ForwardRef1 />}/>
 
-    <LineCode />
-    {/* <UnControlledComponent /> */}
+          <Route path="/ControlledComponent" element={<ControlledComponent />}/>
 
-    <LineCode />
-    <HOCComponent/>
+          <Route path="/UnControlledComponent" element={<UnControlledComponent />}/>
+          
+          <Route path="/HOCComponent" element={<HOCComponent />}/>
+
+        </Routes>
+      </Router>
 
 
-      {/* <BrowserRouter >
-    <Routes>
-      <Route path= "/" element={<h1>Hello Router </h1>}/>
-    </Routes>
-    </BrowserRouter> */}
+
 
     </div>
   );
