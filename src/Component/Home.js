@@ -1,47 +1,40 @@
 import { Link } from "react-router-dom";
 import React from 'react';
+import "./style.css"
 
-
-function Home() {
+function Layout() {
     return (
-        <div>
-            <h1>Hello!!! I`m Web Developer ROHIT, React User</h1>
-
-            <Link to="/Login">Login</Link><br/>
-
-            <Link to="/ClickEventFun">ClickEventFun</Link><br/>
-            <Link to="/StateFun">StateFun</Link><br/>
-            <Link to="/StateCls">StateCls</Link><br/>
-            <Link to="/PropFun">PropFun</Link><br/>
-            <Link to="/PropsClass">PropsClass</Link><br/>
-            <Link to="/GetInputValue">GetInputValue</Link><br/>
-            <Link to="/HideShowElement">HideShowElement</Link><br/>
-            <Link to="/BasicForm">BasicForm</Link><br/>
-            <Link to="/CondRendering">CondRendering</Link><br/>
-            <Link to="/FormValidation">FormValidation</Link><br/>
-            <Link to="/PassfunProps">PassfunProps</Link><br/>
-            <Link to="/ConstructorLCM">ConstructorLCM</Link><br/>
-            <Link to="/RenderLCM">RenderLCM</Link><br/>
-            <Link to="/ComponentDidMountCls">ComponentDidMountCls</Link><br/>
-            <Link to="/ShouldComponentUpdateCls">ShouldComponentUpdateCls</Link><br/>
-            <Link to="/HookUseEffect">HookUseEffect</Link><br/>
-            <Link to="/Styling">Styling</Link><br/>
-            <Link to="/HandleArray">HandleArray</Link><br/>
-            <Link to="/ReUseComponent">ReUseComponent</Link><br/>
-            <Link to="/LineCode">LineCode</Link><br/>
-            <Link to="/HookUseMemo">HookUseMemo</Link><br/>
-            <Link to="/RefClass">RefClass</Link><br/>
-            <Link to="/HookUseRef">HookUseRef</Link><br/>
-            <Link to="/ForwardRef1">ForwardRef1</Link><br/>
-            <Link to="/ControlledComponent">ControlledComponent</Link><br/>
-            <Link to="/UnControlledComponent">UnControlledComponent</Link><br/>
-            <Link to="/HOCComponent">HOCComponent</Link><br/>
-
-
-
+        <div className="Link_List">
+            <Link className="Link" to="/Login">Login</Link>
+            <Link className="Link" to="/ClickEventFun">ClickEventFun</Link>
+            <Link className="Link" to="/StateFun">StateFun</Link>
+            <Link className="Link" to="/StateCls">StateCls</Link>
+            <Link className="Link" to="/PropFun">PropFun</Link>
+            <Link className="Link" to="/PropsClass">PropsClass</Link>
+            <Link className="Link" to="/GetInputValue">GetInputValue</Link>
+            <Link className="Link" to="/HideShowElement">HideShowElement</Link>
+            <Link className="Link" to="/BasicForm">BasicForm</Link>
+            <Link className="Link" to="/CondRendering">CondRendering</Link>
+            <Link className="Link" to="/FormValidation">FormValidation</Link>
+            <Link className="Link" to="/PassfunProps">PassfunProps</Link>
+            <Link className="Link" to="/ConstructorLCM">ConstructorLCM</Link>
+            <Link className="Link" to="/RenderLCM">RenderLCM</Link>
+            <Link className="Link" to="/ComponentDidMountCls">ComponentDidMountCls</Link>
+            <Link className="Link" to="/ShouldComponentUpdateCls">ShouldComponentUpdateCls</Link>
+            <Link className="Link" to="/HookUseEffect">HookUseEffect</Link>
+            <Link className="Link" to="/Styling">Styling</Link>
+            <Link className="Link" to="/HandleArray">HandleArray</Link>
+            <Link className="Link" to="/ReUseComponent">ReUseComponent</Link>
+            <Link className="Link" to="/HookUseMemo">HookUseMemo</Link>
+            <Link className="Link" to="/RefClass">RefClass</Link>
+            <Link className="Link" to="/HookUseRef">HookUseRef</Link>
+            <Link className="Link" to="/ForwardRef1">ForwardRef1</Link>
+            <Link className="Link" to="/ControlledComponent">ControlledComponent</Link>
+            <Link className="Link" to="/UnControlledComponent">UnControlledComponent</Link>
+            <Link className="Link" to="/HOCComponent">HOCComponent</Link>
 
         </div>
     )
 }
 
-export default Home;
+export default Layout;

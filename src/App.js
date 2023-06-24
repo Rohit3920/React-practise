@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import Home from './Component/Home';
@@ -14,7 +13,7 @@ import BasicForm from './Component/BasicForm';
 import CondRendering from './Component/CondRendering'
 import FormValidation from './Component/FormValidation';
 import PassfunProps from './Component/PassfunProps'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import ConstructorLCM from './Component/ConstructorLCM';
 import RenderLCM from './Component/RenderLCM';
 import ComponentDidMountCls from './Component/ComponentDidMountCls';
@@ -42,77 +41,82 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Hello!!! I`m Web Developer ROHIT, React User</h1>
+      <LineCode />
 
       <Router>
+        <Home />
+      <LineCode />
+
+
         <Routes>
-          <Route path="/" element={<Home />}/>
+
+          <Route path="/" element={<Home />} />
 
           <Route path="/login" element={<Login />} />
 
-          <Route path="/ClickEventFun" element={<ClickEventFun />}/>
+          <Route path="/ClickEventFun" element={<ClickEventFun />} />
 
-          <Route path="/StateFun" element={<StateFun />}/>
+          <Route path="/StateFun" element={<StateFun />} />
 
-          <Route path="/StateCls" element={<StateCls />}/>
+          <Route path="/StateCls" element={<StateCls />} />
 
-          <Route path="/PropFun" element={<PropFun name={"Rohit"} email={"rohit@test.com"} other={{ address: "Kolhapur" }} />}/>
+          <Route path="/PropFun" element={<PropFun name={"Rohit"} email={"rohit@test.com"} other={{ address: "Kolhapur" }} />} />
 
-          <Route path="/PropsClass" element={<PropsClass name={"Rohit Nittawadekar"}/>}/>
+          <Route path="/PropsClass" element={<PropsClass name={"Rohit Nittawadekar"} />} />
 
-          <Route path="/GetInputValue" element={<GetInputValue />}/>
+          <Route path="/GetInputValue" element={<GetInputValue />} />
 
-          <Route path="/HideShowElement" element={<HideShowElement />}/>
+          <Route path="/HideShowElement" element={<HideShowElement />} />
 
-          <Route path="/BasicForm" element={<BasicForm />}/>
+          <Route path="/BasicForm" element={<BasicForm />} />
 
-          <Route path="/CondRendering" element={<CondRendering />}/>
+          <Route path="/CondRendering" element={<CondRendering />} />
 
-          <Route path="/FormValidation" element={<FormValidation />}/>
+          <Route path="/FormValidation" element={<FormValidation />} />
 
-          <Route path="/PassfunProps" element={<PassfunProps data={alertBox}/>}/>
+          <Route path="/PassfunProps" element={<PassfunProps data={alertBox} />} />
 
-          <Route path="/ConstructorLCM" element={<ConstructorLCM />}/>
+          <Route path="/ConstructorLCM" element={<ConstructorLCM />} />
 
-          <Route path="/RenderLCM" element={<RenderLCM />}/>
+          <Route path="/RenderLCM" element={<RenderLCM />} />
 
-          <Route path="/ComponentDidMountCls" element={<ComponentDidMountCls />}/>
+          <Route path="/ComponentDidMountCls" element={<ComponentDidMountCls />} />
 
-          <Route path="/Random" element={<Random />}/>
+          <Route path="/Random" element={<Random />} />
 
-          <Route path="/ComponentDidUpdateCls" element={<ComponentDidUpdateCls />}/>
+          <Route path="/ComponentDidUpdateCls" element={<ComponentDidUpdateCls />} />
 
-          <Route path="/ShouldComponentUpdateCls" element={<ShouldComponentUpdateCls />}/>
+          <Route path="/ShouldComponentUpdateCls" element={<ShouldComponentUpdateCls />} />
 
-          <Route path="/HookUseEffect" element={<HookUseEffect />}/>
+          <Route path="/HookUseEffect" element={<HookUseEffect />} />
 
-          <Route path="/Styling" element={<Styling />}/>
+          <Route path="/Styling" element={<Styling />} />
 
-          <Route path="/HandleArray" element={<HandleArray />}/>
+          <Route path="/HandleArray" element={<HandleArray />} />
 
-          <Route path="/ReUseComponent" element={<ReUseComponent />}/>
+          <Route path="/ReUseComponent" element={<ReUseComponent />} />
 
-          <Route path="/LineCode" element={<LineCode />}/>
+          <Route path="/LineCode" element={<LineCode />} />
 
-          <Route path="/HookUseMemo" element={<HookUseMemo />}/>
+          <Route path="/HookUseMemo" element={<HookUseMemo />} />
 
-          <Route path="/RefClass" element={<RefClass />}/>
+          <Route path="/RefClass" element={<RefClass />} />
 
-          <Route path="/HookUseRef" element={<HookUseRef />}/>
+          <Route path="/HookUseRef" element={<HookUseRef />} />
 
-          <Route path="/ForwardRef1" element={<ForwardRef1 />}/>
+          <Route path="/ForwardRef1" element={<ForwardRef1 />} />
 
-          <Route path="/ControlledComponent" element={<ControlledComponent />}/>
+          <Route path="/ControlledComponent" element={<ControlledComponent />} />
 
-          <Route path="/UnControlledComponent" element={<UnControlledComponent />}/>
-          
-          <Route path="/HOCComponent" element={<HOCComponent />}/>
+          <Route path="/UnControlledComponent" element={<UnControlledComponent />} />
+
+          <Route path="/HOCComponent" element={<HOCComponent />} />
 
         </Routes>
+
+      
       </Router>
-
-
-
-
     </div>
   );
 }
